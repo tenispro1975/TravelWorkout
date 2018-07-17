@@ -1,0 +1,22 @@
+﻿@model TravelWorkout.ViewModels.AddHistoryViewModel
+
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h2>Add Workout History</h2>
+
+<form asp-controller="History" asp-action="Add" method="post">
+
+    <div class="form group">
+        <label asp-for="Name"></label>
+        <select asp-for="Name" asp-items=Model.Workout></select>
+    </div>
+
+    <input type="submit" value="Add Workout" />
+
+    @if (ViewBag.Workout.Count == 0)
+    {
+        <p>No saved workouts yet!!</p>
+    }
+</form>

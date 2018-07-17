@@ -9,7 +9,7 @@ namespace TravelWorkout.Models
     public class Equipment
     {
         public int ID { get; set; }
-        public int WorkoutID { get; set; }
+        //public int WorkoutID { get; set; }
         public string EquipmentName1 { get; set; }
         public string EquipmentName2 { get; set; }
         public string EquipmentName3 { get; set; }
@@ -17,4 +17,10 @@ namespace TravelWorkout.Models
 
         public IList<Workouts> Workout { get; set; }
     }
+
+
+
+
 }
+
+
