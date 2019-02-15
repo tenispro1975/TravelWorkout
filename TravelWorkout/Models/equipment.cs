@@ -15,7 +15,7 @@ namespace TravelWorkout.Models
         public string EquipmentName3 { get; set; }
         public string EquipmentName4 { get; set; }
 
-        public IList<Workouts> Workout { get; set; }
+        public IList<Workout> Workout { get; set; }
     }
 
 

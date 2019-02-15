@@ -9,6 +9,6 @@ namespace TravelWorkout.Models
     {
         public int ID { get; set; }
         public string WorkoutID { get; set; }
-        public Workouts Workout { get; set; }
+        public Workout Workout { get; set; }
     }
 }

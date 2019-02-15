@@ -5,14 +5,15 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-namespace TravelWorkout.ViewModels
+@Model namespace TravelWorkout.ViewModels
 {
     public class AddHistoryViewModel
     {
         [Required]
         [Display(Name = "Workout")]
-        public string Workout { get; set; }
+        public List<SelectListItem> Workout { get; set; }
 
 
     }
