@@ -7,13 +7,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-@Model namespace TravelWorkout.ViewModels
+ namespace TravelWorkout.ViewModels
 {
     public class AddHistoryViewModel
     {
         [Required]
         [Display(Name = "Workout")]
-        public List<SelectListItem> Workout { get; set; }
+        public List<SelectListItem> Workouts { get; set; }
 
 
     }

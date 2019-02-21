@@ -43,13 +43,14 @@ namespace TravelWorkout.Controllers
 
                 Workout newWorkouts = new Workout
                 {
-                    Workout = AddHistoryViewModel
+                    Workouts = AddHistoryViewModel.Workouts
                 };
 
 
                 Workout newWorkout = null;
                 context.Workout.Add(newWorkout);
                 context.SaveChanges();
+              
 
                 return Redirect("/History");
             }

@@ -8,7 +8,7 @@ namespace TravelWorkout.Models
     public class WorkoutEquipment
     {
         public int ID { get; set; }
-        public string WorkoutID { get; set; }
+        public int WorkoutID { get; set; }
         public Workout Workout { get; set; }
     }
 }
